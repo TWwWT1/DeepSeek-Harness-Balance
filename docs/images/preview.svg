@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="284" viewBox="0 0 960 284" role="img" aria-labelledby="title desc">
+  <title id="title">DeepSeek Harness Balance 界面示意</title>
+  <desc id="desc">默认隐藏余额，悬停峰谷标签后显示演示金额。绿色波谷和红色波峰使用不同的线条图标。所有界面和金额均为演示数据。</desc>
+  <rect width="960" height="284" rx="20" fill="#f5f8fc"/>
+  <g font-family="Segoe UI, Microsoft YaHei, Noto Sans SC, sans-serif">
+    <text x="28" y="44" fill="#172d46" font-size="23" font-weight="650">DeepSeek Harness Balance</text>
+    <text x="28" y="72" fill="#687b91" font-size="14">账号栏余额 · 峰谷时段 · 本地消费记录</text>
+    <g fill="#fff" stroke="#dde6f0">
+      <rect x="28" y="99" width="288" height="112" rx="13"/>
+      <rect x="336" y="99" width="288" height="112" rx="13"/>
+      <rect x="644" y="99" width="288" height="112" rx="13"/>
+    </g>
+    <g fill="#65788e" font-size="12">
+      <text x="46" y="123">默认显示</text>
+      <text x="354" y="123">鼠标悬停</text>
+      <text x="662" y="123">波峰时段</text>
+    </g>
+    <g fill="#e9eff8">
+      <circle cx="60" cy="168" r="15"/>
+      <circle cx="368" cy="168" r="15"/>
+      <circle cx="676" cy="168" r="15"/>
+    </g>
+    <g fill="#526981" font-size="12" text-anchor="middle">
+      <text x="60" y="172">U</text><text x="368" y="172">U</text><text x="676" y="172">U</text>
+    </g>
+    <g fill="#243a52" font-size="14"><text x="84" y="173">用户</text><text x="392" y="173">用户</text><text x="700" y="173">用户</text></g>
+    <g fill="#eaf6ef" stroke="#c7e5d2">
+      <rect x="170" y="154" width="65" height="27" rx="13.5"/>
+      <rect x="478" y="154" width="65" height="27" rx="13.5"/>
+    </g>
+    <rect x="786" y="154" width="65" height="27" rx="13.5" fill="#fff0f2" stroke="#efc7cf"/>
+    <g fill="none" stroke="#167049" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M180 164h3l3 7 3-7h3"/><path d="M488 164h3l3 7 3-7h3"/>
+    </g>
+    <path d="M796 171h3l3-7 3 7h3" fill="none" stroke="#b53146" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g font-size="12" font-weight="600"><text x="199" y="172" fill="#167049">波谷</text><text x="507" y="172" fill="#167049">波谷</text><text x="815" y="172" fill="#b53146">波峰</text></g>
+    <text x="551" y="172" fill="#243a52" font-size="13" font-weight="500">¥12.34</text>
+    <path d="M520 180v16l4-5 5 1z" fill="#243a52" stroke="#fff" stroke-width="1.2"/>
+    <text x="28" y="246" fill="#697d94" font-size="12">界面示意 · 金额为演示数据</text>
+    <text x="932" y="246" fill="#697d94" font-size="12" text-anchor="end">点击标签可打开概览、记录和设置</text>
+  </g>
+</svg>
