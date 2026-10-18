@@ -1,0 +1,31 @@
+{
+  "name": "dsh-balance-card-local",
+  "version": "1.1.4",
+  "description": "Harness 账号栏余额、峰谷时段、消费记录、每轮费用估算和预算提醒",
+  "keywords": ["deepseek", "harness", "balance", "plugin", "usage", "cost-tracking"],
+  "type": "module",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": ["lib", "src", "scripts", "tests", "docs", "cordis.patch.yml", "README.md", "CHANGELOG.md", "CONTRIBUTING.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "locale"],
+  "engines": { "node": ">=22", "dsh": ">=0.2.1-rc.2 <0.2.2-0" },
+  "dsh": {
+    "bundle": { "patch": ["./cordis.patch.yml"] },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  },
+  "peerDependencies": { "@deepseek-ai/cordis": "*" },
+  "scripts": { "build": "node scripts/build.mjs", "test": "node --test tests/*.test.mjs", "check": "node scripts/check.mjs" }
+}
