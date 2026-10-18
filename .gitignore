@@ -1,0 +1,28 @@
+# Dependencies and local packages
+node_modules/
+*.tgz
+*.zip
+dist/
+coverage/
+
+# Local runtime data and credentials
+.dsh/
+.codex/
+.env
+.env.*
+!.env.example
+.credentials*
+ledger-v1.json*
+balance-card/
+*.log
+*.tmp
+*.lock
+!package-lock.json
+!pnpm-lock.yaml
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
